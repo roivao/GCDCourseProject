@@ -95,6 +95,36 @@ The `run_analysis.R` script is an R file that performs the task required in the 
         write.table(Avg_Feautures, "Avg_Features.txt", row.names = FALSE )  
         ```
 
+## III. Output
+After `run_analysis.R` execution, the `Avg_Features.txt` is created. To get an insight of the process performed and the final tidy data the following aspects are described.
+
+### Variable name modifications
+In order to facilitate the reading the following modification had been made:
+
+* t = time
+
+* Acc = Accelerometer
+
+* Mag = Magnitude
+
+* f = Frequency 
+
+### Variable values
+#### Subject
+This variable contains values from 1 to 30, indicating the id of each participant in the experiment
+
+#### Activity
+The subjects performed the following activities:
+
+|       VALUES       |       SUBJECT ACTION       |
+|:------------------:|:--------------------------:|
+| WALKING            | Subject walking            |
+| WALKING_UPSTAIRS   | Subject walking upstairs   |
+| WALKING_DOWNSTAIRS | Subject walking downstairs |
+| SITTING            | Subject sitting            |
+| STANDING           | Subject standing           |
+| LAYING             | Subject laying             |
+
 
 [L1]: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 [L2]: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
